@@ -1,0 +1,30 @@
+#type: node
+#context: sop
+#internal: flatten
+#largeicon: /nodes/sop/SOP_hdk_flatten.png
+
+#tags: flatten
+
+= Flatten =
+
+""" Flattens geometry onto a plane """
+
+@parameters
+
+Group:
+    Specifies the points to flatten.
+
+Distance:
+    Distance to translate the plane along its normal.
+
+Use Direction Vector:
+    Specifies whether to use a custom vector for the plane normal, instead of an axis-aligned plane.
+
+Orientation:
+    Specifies an axis-aligned plane to flatten onto.
+
+Direction:
+    The normal of the plane to flatten onto.
+
+@related
+- [Node:sop/ray]

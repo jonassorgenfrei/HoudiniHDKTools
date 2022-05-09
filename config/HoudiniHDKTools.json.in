@@ -1,0 +1,9 @@
+{
+	"env": [
+		{
+			"JONSORHDK": "@CMAKE_INSTALL_PREFIX@"
+		},
+	],
+	"path": "$JONSORHDK"
+	
+}
