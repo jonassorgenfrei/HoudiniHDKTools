@@ -38,7 +38,7 @@ using namespace HDK_Sample;
 
 /// This is the internal name of the SOP type.
 /// It isn't allowed to be the same as any other SOP's type name.
-const UT_StringHolder SOP_PolyClip::theSOPTypeName("hdk_polyclip"_sh);
+const UT_StringHolder SOP_PolyClip::theSOPTypeName("hdk_polyclip");
 
 void
 newSopOperator(OP_OperatorTable *table)
@@ -96,7 +96,7 @@ static const char *theDsFile = R"THEDSFILE(
 PRM_Template *
 SOP_PolyClip::buildTemplates()
 {
-    static PRM_TemplateBuilder templ("SOP_PolyClip.C"_sh, theDsFile);
+    static PRM_TemplateBuilder templ("SOP_PolyClip.C", theDsFile);
     if (templ.justBuilt())
     {
 	templ.setChoiceListPtr("group", &SOP_Node::primGroupMenu);

@@ -56,7 +56,7 @@ using namespace HDK_Sample;
 
 /// This is the internal name of the SOP type.
 /// It isn't allowed to be the same as any other SOP's type name.
-const UT_StringHolder SOP_Star::theSOPTypeName("hdk_star"_sh);
+const UT_StringHolder SOP_Star::theSOPTypeName("hdk_star");
 
 /// newSopOperator is the hook that Houdini grabs from this dll
 /// and invokes to register the SOP.  In this case, we add ourselves
@@ -127,7 +127,7 @@ static const char *theDsFile = R"THEDSFILE(
 PRM_Template*
 SOP_Star::buildTemplates()
 {
-    static PRM_TemplateBuilder templ("SOP_Star.C"_sh, theDsFile);
+    static PRM_TemplateBuilder templ("SOP_Star.C", theDsFile);
     return templ.templates();
 }
 
